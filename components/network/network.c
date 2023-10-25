@@ -131,7 +131,6 @@ void WIFI_START(wifi_mode_t mode) {
 }
 
 esp_err_t init_interface() {
-    ///*
     WIFI_INIT();
     STA_INIT_IP(RED,PASS,"192.168.1.150","192.168.1.1","255.255.255.0");
     AP_INIT_IP("esp32_AP","password","192.168.254.1","192.168.254.1","255.255.255.0");
